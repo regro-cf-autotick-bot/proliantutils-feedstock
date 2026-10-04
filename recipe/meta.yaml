@@ -5,11 +5,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/p/proliantutils/proliantutils-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/p/proliantutils/proliantutils-{{ version }}.tar.gz
   sha256: dd5a688cda615cca43dcf455223d712a3f29571bfc293a9511f5f01a3dc6d733
 
 build:
-  number: 4
+  number: 5
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
